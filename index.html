@@ -46,10 +46,18 @@
         .margin {
             margin-left: 20px;
         }
+
+        h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: chocolate;
+        }
     </style>
 </head>
 
 <body>
+    <h1>This is Count-Down Timer</h1>
     <div class="align">
         <div class="margin">
             <p id="days">00</p>
@@ -72,7 +80,7 @@
 
 </html>
 <script>
-    var countDownDate = new Date("Aug 30,2022 00:00:00").getTime();
+    var countDownDate = new Date("Aug 30,2023 00:00:00").getTime();
     var x = setInterval(function () {
         var now = new Date().getTime();
         var distance = countDownDate - now;
